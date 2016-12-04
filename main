@@ -1,37 +1,40 @@
 
 	#include <iostream>
+#include <string>
         using namespace std;
 
 		int main ()
 			{
-			   unsigned int  grade1;  //initialize grade variable for class 1
-			   unsigned int  grade2;  //initialize grade variable for class 2
-			   unsigned int  grade3;  //initialize grade variable for class3
+			  // unsigned int  grade1;  //initialize grade variable for class 1
+			  // unsigned int  grade2;  //initialize grade variable for class 2
+			  // unsigned int  grade3;  //initialize grade variable for class3
 			  
 			   char class1;  //initialize character variable for class1
 			   char class2;  //initialize character variable for class2
 			   char class3; //initialize character variable  for class3
 			
-			  cout << "Please input your grade for Class #1 (A, B, C, D only)" << std::endl;  //Ask for input for class1
-			  cin >>  class1;  //Get input from user for class1
-			  cout << "Please input your grade Class #2 (A, B, C, D only)"<< std::endl;  //Ask for input for class2  
-			  cin >>  class2;  //Get input from user for class2
-			  cout << "Please input your grade Class #3 (A, B, C, D only) "<< std::endl;  //Ask for input for class3  
-			  cin >>  class3;  //Get input from user for class3
+			  cout << "Please input your grade for Class #1 (A, B, C, D only) \n";  //Ask for input for class1
+			  getline(cin, class1);
+			  //cin.ignore(1); //clears the input stream for when it is run next - else a /n is stored in input stream
+			  //cin>>class1;  //Get input from user for class1
+			  
+			 // cout << "Please input your grade Class #2 (A, B, C, D only)"<< std::endl;  //Ask for input for class2  
+			 // cin >>  class2;  //Get input from user for class2
+			 // cout << "Please input your grade Class #3 (A, B, C, D only) "<< std::endl;  //Ask for input for class3  
+			 // cin >>  class3;  //Get input from user for class3
 			
 			   unsigned int GPA; // initialize GPA variable 
 			
-			   if (class1 !=A || class1 !=B || class1 !=C || class1 !=D) 
-			       { 
-			       	cout << "Please correctly input grade for Class #1 (A, B, C, D only);
-				cin >> class1;
-				}
-			   else c
+			   //if (class1 !='A' || class1 !='B' || class1 !='C' || class1 !='D') 
+			     //  { 
+			       //	cout << "Please correctly input grade for Class #1 (A, B, C, D only)";
+				//cin >> class1;
+				//}
+			   //else cout << "Class1 Grade =" << class1;
 			   GPA = 0;  //Perform GPA calculation
 			
 			    std::cout << GPA;
 			}
-
 
 
 /*
