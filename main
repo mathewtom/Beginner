@@ -1,0 +1,25 @@
+
+	#include <iostream>
+		Int main ()
+			{
+			   unsigned int  grade1;  //initialize grade variable for class 1
+			   unsigned int  grade2;  //initialize grade variable for class 2
+			   unsigned int  grade3;  //initialize grade variable for class3
+			  
+			   char class1;  //initialize character variable for class1
+			   char class2;  //initialize character variable for class2
+			   char class3; //initialize character variable  for class3
+			
+			  std::out << "Please input Class #1"<< std::endl;  //Ask for input for class1
+			  std::cin >>  class1;  //Get input from user for class1
+			  std::out << "Please input Class #2"<< std::endl;  //Ask for input for class2  
+			  std::cin >>  class2;  //Get input from user for class2
+			  std::out << "Please input Class #3"<< std::endl;  //Ask for input for class3  
+			  std::cin >>  class3;  //Get input from user for class3
+			
+			   unsigned int GPA; // initialize GPA variable 
+			
+			   GPA = 0  //Perform GPA calculation
+			
+			    std::out << GPA;
+			}
