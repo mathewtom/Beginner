@@ -1,6 +1,8 @@
 
 	#include <iostream>
-		Int main ()
+        using namespace std;
+
+		int main ()
 			{
 			   unsigned int  grade1;  //initialize grade variable for class 1
 			   unsigned int  grade2;  //initialize grade variable for class 2
@@ -10,16 +12,36 @@
 			   char class2;  //initialize character variable for class2
 			   char class3; //initialize character variable  for class3
 			
-			  std::out << "Please input Class #1"<< std::endl;  //Ask for input for class1
-			  std::cin >>  class1;  //Get input from user for class1
-			  std::out << "Please input Class #2"<< std::endl;  //Ask for input for class2  
-			  std::cin >>  class2;  //Get input from user for class2
-			  std::out << "Please input Class #3"<< std::endl;  //Ask for input for class3  
-			  std::cin >>  class3;  //Get input from user for class3
+			  cout << "Please input your grade for Class #1 (A, B, C, D only)" << std::endl;  //Ask for input for class1
+			  cin >>  class1;  //Get input from user for class1
+			  cout << "Please input your grade Class #2 (A, B, C, D only)"<< std::endl;  //Ask for input for class2  
+			  cin >>  class2;  //Get input from user for class2
+			  cout << "Please input your grade Class #3 (A, B, C, D only) "<< std::endl;  //Ask for input for class3  
+			  cin >>  class3;  //Get input from user for class3
 			
 			   unsigned int GPA; // initialize GPA variable 
 			
-			   GPA = 0  //Perform GPA calculation
+			   if (class1 !=A || class1 !=B || class1 !=C || class1 !=D) 
+			       { 
+			       	cout << "Please correctly input grade for Class #1 (A, B, C, D only);
+				cin >> class1;
+				}
+			   else c
+			   GPA = 0;  //Perform GPA calculation
 			
-			    std::out << GPA;
+			    std::cout << GPA;
 			}
+
+
+
+/*
+GPA calcuation
+
+GPA = (grade points)/(number of classes which in this program will always be three
+If grade = A, then points = 4.
+If grade = B, then points =3.
+If grade = C, then points = 2.
+If grade = D, then point =1.
+
+
+*/
